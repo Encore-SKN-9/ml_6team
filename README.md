@@ -61,7 +61,9 @@
 
 <결과>
 Accuracy: 92.04%
+
 Predictions: [0 0 0 0 0 0 0 0 1 1]
+
 True Labels: [0 0 0 0 0 0 0 0 0 0]
 
 
