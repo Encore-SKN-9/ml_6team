@@ -48,7 +48,7 @@
   ![output](https://github.com/user-attachments/assets/e0eb5a7c-480c-40c7-afd6-58de11da90de)
 
 
-3. 모델 훈련 및 평가
+3. 모델 훈련 및 평가 - 로지스틱 회귀 모델 사용
    
 3-1) 지도학습
 - 입력 데이터 및 라벨 데이터 설정
@@ -76,15 +76,22 @@ Predictions: [0 0 0 0 0 0 0 0 1 1]
 True Labels: [0 0 0 0 0 0 0 0 0 0]
 
 
-4. 시각화
+3-2) 시각화
 - 불균형 데이터 확인
 ![실제 라벨보다 예측 라벨이 더 높게 나옴](https://github.com/user-attachments/assets/58d50e60-62a0-484b-bdf1-d3e04b890d05)
 
 
 - 클래스 가중치 적용
-![가중치 줘서 예측 라벨 교정함](https://github.com/user-attachments/assets/9da21b92-61a5-4a07-9359-b563cdaf3761)
+![가중치 줘서 예측 라벨 교정함](https://github.com/user-attac교
 
-     
+
+3-3) 다른 분류 모델 앙상블로 비교
+![스크린샷 2025-01-31 192922](https://github.com/user-attachments/assets/8b7bd231-1c05-49e8-be76-3078d51e8fbc)
+학습 점수: 0.9849521203830369
+테스트 평가 점수: 0.9713375796178344
+
+![Uploading 스크린샷 2025-01-31 192958.png…]()
+
   
 
   
