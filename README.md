@@ -75,7 +75,13 @@ Predictions: [0 0 0 0 0 0 0 0 1 1]
 True Labels: [0 0 0 0 0 0 0 0 0 0]
 
 
+4. 시각화
+- 불균형 데이터 확인
+![실제 라벨보다 예측 라벨이 더 높게 나옴](https://github.com/user-attachments/assets/58d50e60-62a0-484b-bdf1-d3e04b890d05)
 
+
+- 클래스 가중치 적용
+![가중치 줘서 예측 라벨 교정함](https://github.com/user-attachments/assets/9da21b92-61a5-4a07-9359-b563cdaf3761)
 
      
   
