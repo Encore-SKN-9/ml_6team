@@ -48,7 +48,7 @@
    ![output](https://github.com/user-attachments/assets/cd961639-3cb0-47cb-b8b6-8e4bd3e3a1b3)
 
 2-3) 종족값에 따른 개체 수 
-![output](https://github.com/user-attachments/assets/9fe23ac6-c393-4561-8777-f5c0b531381b)
+  ![output](https://github.com/user-attachments/assets/9fe23ac6-c393-4561-8777-f5c0b531381b)
 
 
 
