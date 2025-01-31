@@ -40,6 +40,7 @@
 1. 데이터 수집 및 선정
    https://www.kaggle.com/code/vinukranaweera/pokemon-type-classification
 2. 데이터 전처리
+
   2-1) 공격력을 분석하는데 있어 필요 없는 칼럼 삭제
    ![스크린샷 2025-01-31 143824](https://github.com/user-attachments/assets/e1575936-89be-4b91-8699-59e39c4534c8)
 
