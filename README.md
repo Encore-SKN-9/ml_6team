@@ -90,7 +90,8 @@ True Labels: [0 0 0 0 0 0 0 0 0 0]
 학습 점수: 0.9849521203830369
 테스트 평가 점수: 0.9713375796178344
 
-![Uploading 스크린샷 2025-01-31 192958.png…]()
+![스크린샷 2025-01-31 192958](https://github.com/user-attachments/assets/d1dc48ab-1514-4db9-aab4-4a70be828990)
+
 
   
 
