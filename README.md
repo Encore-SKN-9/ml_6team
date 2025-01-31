@@ -45,11 +45,24 @@
    ![스크린샷 2025-01-31 143824](https://github.com/user-attachments/assets/e1575936-89be-4b91-8699-59e39c4534c8)
 
 2-2) 속성별 캐릭터 수 확인
-   ![output](https://github.com/user-attachments/assets/cd961639-3cb0-47cb-b8b6-8e4bd3e3a1b3)
+  ![output](https://github.com/user-attachments/assets/e0eb5a7c-480c-40c7-afd6-58de11da90de)
+
 
 3. 모델 훈련 및 평가
 3-1) 지도학습
-   입력 데이터 
+- 입력 데이터 및 라벨 데이터 설정
+    ![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
+- 데이터 분할 및 정규화
+![스크린샷 2025-01-31 182342](https://github.com/user-attachments/assets/0d480fad-bae7-418c-904f-5bd2b9abacc2)
+
+- 모델 평가 및 정확도 측정
+  ![스크린샷 2025-01-31 182422](https://github.com/user-attachments/assets/df25721b-7c02-4c83-8d98-f8c500fef825)
+
+<결과>
+Accuracy: 92.04%
+Predictions: [0 0 0 0 0 0 0 0 1 1]
+True Labels: [0 0 0 0 0 0 0 0 0 0]
+
 
 
 
