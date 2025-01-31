@@ -26,7 +26,7 @@
 ### **프로젝트명**: 포켓몬의 공격력 예측
 
 ** 목표**
-- 포켓몬 랜덤 그룹의 공격력 비교 
+- 포켓몬 캐릭터 타입별 가장 강한 캐릭터 도출하기
   
 ** 배경 **
 - 게임 '포켓몬고'의 열풍
@@ -47,9 +47,9 @@
 2-2) 속성별 캐릭터 수 확인
    ![output](https://github.com/user-attachments/assets/cd961639-3cb0-47cb-b8b6-8e4bd3e3a1b3)
 
-2-3) 종족값에 따른 개체 수 
-
-  ![output](https://github.com/user-attachments/assets/9fe23ac6-c393-4561-8777-f5c0b531381b)
+3. 모델 훈련 및 평가
+3-1) 지도학습
+   입력 데이터 
 
 
 
