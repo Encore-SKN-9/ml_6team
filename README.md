@@ -8,7 +8,7 @@
 
 ## 1. Introduction Team (팀 소개)
 
-### 팀명: SS (ShoeScope)
+### 팀명: 오박사
 
 #### **팀원**
 
@@ -22,4 +22,18 @@
 
 
 ## 2. Introduction Project (프로젝트 개요)
+
+### **프로젝트명**: 포켓몬의 공격력 예측
+
+** 소개**
+- 포켓몬의 HP, Defense, Speed 등의 특성에 따라 공격력(Attack)을 예측하는 모델을 만들기
+  
+** 배경 **
+- 게임 '포켓몬고'의 열풍
+  ![스크린샷 2025-01-31 125447](https://github.com/user-attachments/assets/1f17e76c-3888-41d0-9696-0a3f993606c3)
+- '포켓몬고' 상성의 중요성
+  ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/af2b6101-4f5d-4040-b6c6-07f8396189bf)
+
+
+
 
