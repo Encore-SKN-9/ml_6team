@@ -59,6 +59,7 @@
 ![스크린샷 2025-01-31 182342](https://github.com/user-attachments/assets/0d480fad-bae7-418c-904f-5bd2b9abacc2)
 
 - 모델 평가 및 정확도 측정
+  
 ![스크린샷 2025-01-31 183134](https://github.com/user-attachments/assets/aee3a671-2568-40dc-87d4-54cf9398720e)
 
 
