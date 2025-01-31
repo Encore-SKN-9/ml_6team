@@ -36,7 +36,7 @@
   ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/af2b6101-4f5d-4040-b6c6-07f8396189bf)
                                                                                     * 출처: https://biz.heraldcorp.com/article/1233223
 
-## 3. EDA Processing (EDA 진행과정)
+## 3. EDA Processing
 1. 데이터 수집 및 선정
    https://www.kaggle.com/code/vinukranaweera/pokemon-type-classification
 2. 데이터 전처리
