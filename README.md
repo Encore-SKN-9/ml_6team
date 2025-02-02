@@ -30,17 +30,17 @@
 - 상성 데이터를 제외한 순수 능력치 데이터(7종)를 이용하여 포켓몬 경향성 분석 및 클러스터링을 통한 확률 예측
   
 **배경**
-- 게임 '포켓몬고'의 열풍
+- 게임 '포켓몬GO'의 열풍
   ![스크린샷 2025-01-31 125447](https://github.com/user-attachments/assets/1f17e76c-3888-41d0-9696-0a3f993606c3)
   
-- 포켓몬 캐릭터의 공격력에 대한 사람들의 관심도 증가
+- 포켓몬 캐릭터의 전투에 대한 포켓몬GO 유저들의 전략 니즈 증가
   ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/d3f8418f-322a-41d7-afca-60a70f90f618)
 
-                                                                      * 출처: https://biz.heraldcorp.com/article/1233223
+                                                                 * 출처: https://biz.heraldcorp.com/article/1233223
 
 ## 3. EDA Pre-Processing
 1. 데이터 수집 및 선정
-- https://www.kaggle.com/code/vinukranaweera/pokemon-type-classification
+> https://www.kaggle.com/code/vinukranaweera/pokemon-type-classification
 
 2. 데이터 전처리
 
