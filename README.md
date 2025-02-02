@@ -4,7 +4,9 @@
 
 **개발기간: 25.01.22 - 25.02.03**
 
-
+<br>
+<br>
+<br>
 
 ## 1. Introduction Team (팀 소개)
 
@@ -20,7 +22,9 @@
 | 이윤재     | [@dadambi116](https://github.com/dadambi116)
 | 조이현     | [@SIQRIT](https://github.com/SIQRIT)
 
-
+<br>
+<br>
+<br>
 
 ## 2. Introduction Project (프로젝트 개요)
 
@@ -37,6 +41,10 @@
   ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/d3f8418f-322a-41d7-afca-60a70f90f618)
 
                                                                            * 출처: https://biz.heraldcorp.com/article/1233223
+
+<br>
+<br>
+<br>
 
 ## 3. EDA Pre-Processing
 1. 데이터 수집 및 선정
@@ -72,6 +80,10 @@ df_dropped_single['type_only'] = df_dropped_single['type_1']
 df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped_double['type_2']))
 ```
 ![스크린샷 2025-02-02 195229](https://github.com/user-attachments/assets/3033f9fa-052c-4f0a-9adc-cf2432e3adf7)
+
+<br>
+<br>
+<br>
 
 ## 4. 모델 훈련 및 평가
 # 지도학습
@@ -211,7 +223,9 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 **앙상블 모델 - 이중 속성 시각화**
 ![지도학습_이중 속성_앙상블 데이터](https://github.com/user-attachments/assets/772b5e45-c166-48c7-9ff7-a158853fb1fe)
 
-
+<br>
+<br>
+<br>
 
 # 비지도 학습
 ## 단일 속성
@@ -260,7 +274,6 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 **- DBSCAN**
 ![DBSCAN](https://github.com/user-attachments/assets/fa51b2f4-1b55-47d8-ae61-373e4b187dcd)
 
-
 **- 베이시안 가우시안 혼합 클러스터 시각화**
 ![베이시안 가우시안 혼합_클러스터 결과 시각화](https://github.com/user-attachments/assets/114f05f2-6389-4e6e-89df-a9147a22cf18)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MinMax정규화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard정규화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기본 데이터
@@ -273,8 +286,6 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ![라플라시안 스펙트럴 클러스터링_시각화](https://github.com/user-attachments/assets/08cc6a5b-2b71-4257-8f04-ca3cc92aabcc)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MinMax정규화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard정규화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기본 데이터
 
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -295,8 +306,6 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 - 데이터의 형태의 따른 정규화와 모델 선택의 중요성을 알게 되었다.
 
-<br>
-<br>
 <br>
 <br>
 <br>
