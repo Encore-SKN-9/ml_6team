@@ -62,14 +62,9 @@ df_dropped_double = df_dropped[df_dropped['type_2'] != 'None']
 ```
 ![스크린샷 2025-02-02 195229](https://github.com/user-attachments/assets/3033f9fa-052c-4f0a-9adc-cf2432e3adf7)
 
+## 4. 모델 훈련 및 평가
+# 지도학습
 
-
-
-
-
-3. 모델 훈련 및 평가 - 로지스틱 회귀 모델 사용
-   
-3-1) 지도학습
 - 입력 데이터 및 라벨 데이터 설정
   ![스크린샷 2025-01-31 182932](https://github.com/user-attachments/assets/ff4d0812-aed5-4c29-83c0-fc134592c520)
 
@@ -113,6 +108,7 @@ True Labels: [0 0 0 0 0 0 0 0 0 0]
 ![스크린샷 2025-01-31 192958](https://github.com/user-attachments/assets/d1dc48ab-1514-4db9-aab4-4a70be828990)
 
 
+# 비지도 학습
   
 
   
