@@ -211,8 +211,8 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 # 비지도 학습
 ## 단일 속성
-**- DBSCAN**
-![DBSCAN](https://github.com/user-attachments/assets/601cde98-997e-480d-97e9-df8f318a79eb)
+**- LabelEncoder**
+![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
 |MINMAX정규화|                     |Standard정규화|                    |기본 데이터|
 
 **- KMeans**
@@ -223,8 +223,10 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ![가우시안](https://github.com/user-attachments/assets/89ac48f5-432d-40be-b213-fa643090776b)
 
 
-**- LabelEncoder**
-![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
+**- DBSCAN**
+![DBSCAN](https://github.com/user-attachments/assets/601cde98-997e-480d-97e9-df8f318a79eb)
+
+
 
 ## 이중 속성
 **- 실루엣**
@@ -248,17 +250,17 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ![가우시안 혼합_포켓몬 총 능력치 클러스터 확률 시각화](https://github.com/user-attachments/assets/c6e8bd6f-c3f4-4496-b834-e46ce5f28b50)
 
 
+**- DBSCAN**
+
+![DBSCAN](https://github.com/user-attachments/assets/fa51b2f4-1b55-47d8-ae61-373e4b187dcd)
+
+
 **- 베이시안 가우시안 혼합 클러스터 시각화**
 ![베이시안 가우시안 혼합_클러스터 결과 시각화](https://github.com/user-attachments/assets/114f05f2-6389-4e6e-89df-a9147a22cf18)
 
 
 **- 베이시안 가우시안 혼합 총 능력치 클러스터 확률 시각화**
 ![베이시안 가우시안 혼합_포켓몬 총 능력치 클러스터 확률 시각화](https://github.com/user-attachments/assets/c0bf2a13-eb92-4699-8779-592db8b40be9)
-
-
-**- DBSCAN**
-
-![DBSCAN](https://github.com/user-attachments/assets/fa51b2f4-1b55-47d8-ae61-373e4b187dcd)
 
 
 **- 라플라시안 스펙트럴 클러스터링 시각화**
