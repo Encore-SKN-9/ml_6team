@@ -127,9 +127,9 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 <결과>
 |단일 속성| Performance metrics |   Result  |
 |---|---------------------|-----------|
-|---| 정확도               | 93.92 % |
-|---| 정밀도 | 28.57 % |
-|---| 재현율 | 33.33 % |
+|---| 정확도 (Accuracy)              | 93.92 % |
+|---| 정밀도 (Precision) | 28.57 % |
+|---| 재현율 (Recall) | 33.33 % |
 |---|F1 score | 30.77% |
 
 
@@ -140,7 +140,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ```
 # 앙상블 모델 학습
 knn_clf = KNeighborsClassifier(n_neighbors=7)
-lr_clf = LogisticRegression(')
+lr_clf = LogisticRegression()
 dt_clf = DecisionTreeClassifier()
 
 voting_clf = VotingClassifier(
@@ -170,13 +170,11 @@ recall = recall_score(y_test, y_pred_test)
 f1 = f1_score(y_test, y_pred_test)
 print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Score: {f1 * 100:.4f}")
 ```
-
-|앙상블 모델 결과| Performance metrics |   Result  | 로지스틱 회귀 모델 결과              | Performance metrics |   Result  |
-|---|---------------------|-----------|    -------                |---------------------|-----------|
-|---| 학습 점수 / 테스트 점수 | 96.80 % / 94.59 |   ---       | 정확도               | 93.92 % |
-|---| 정밀도 | 73.91 % |            ---                         | 정밀도 | 28.57 % |
-|---| 재현율 | 59.64 % |                   ---                  | 재현율 | 33.33 % |     
-|-----|F1 score | 66.01% |                  ---                   |F1 score | 30.77% |
+|앙상블 모델| Performance metrics |   Result  |
+|---|---------------------|-----------|
+|KNeighborsClassifier| 정확도 (Accuracy) | 96.80 % |
+|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
+|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
 
 ![지도학습_단일 속성_앙상블 데이터](https://github.com/user-attachments/assets/10488d25-d9f6-453f-bb01-7e92438ff7a1)
 
@@ -185,12 +183,12 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 <결과>
 
-|이중 속성| Performance metrics |   Result  | --- | 단일 속성 |Performance metrics |   Result  |
-|---|---------------------|-----------| --- |-----------| --- |-----------|
-|---| 정확도               | 78.91 % | --- | 정확도               | 93.92 % |
-|---| 정밀도 | 73.91 % | --- | 정밀도 | 28.57 % |
-|---| 재현율 | 59.64 % | --- |  재현율 | 33.33 % |
-|---|F1 score | 66.02% | ---| F1 score | 30.77% |
+|이중 속성| Performance metrics |   Result  |
+|---|---------------------|-----------|
+|---| 정확도 (Accuracy)              | 78.91 % |
+|---| 정밀도 (Precision)| 73.91 % | --- |
+|---| 재현율 (Recall)| 59.64 % 
+|---|F1 score | 66.02% |
 
 ![output](https://github.com/user-attachments/assets/a056ba03-813d-4913-a783-950abd1fc1ac)
 
@@ -198,12 +196,11 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 - 앙상블 모델 사용
 <결과 >
 
-|앙상블 모델 결과| Performance metrics |   Result  |  로지스틱 회귀 모델 결과              | Performance metrics |   Result  |
-|---|---------------------|-----------|    ----------               |---------------------|-----------|
-|---| 학습 점수 / 테스트 점수 |88.11 % / 75.30% |   ---     | 정확도               | 78.91 % |
-|---| 정밀도 | 73.91 % |            ---                         | 정밀도 |  73.91 % |
-|---| 재현율 | 59.64 % |                   ---                  | 재현율 | 59.64 % |     
-|-----|F1 score | 66.01% |                  ---                   |F1 score |  66.02% |
+|앙상블 모델| Performance metrics |   Result  |
+|---|---------------------|-----------|
+|KNeighborsClassifier| 정확도 (Accuracy) | 88.11 % |
+|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
+|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
 
 ![지도학습_이중 속성_앙상블 데이터](https://github.com/user-attachments/assets/772b5e45-c166-48c7-9ff7-a158853fb1fe)
 
@@ -273,11 +270,22 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 
 ## 결론
+지도학습에서는 단일 속성의 경우, 로지스틱 회귀보다 앙상블이 정확도가 더 좋게 나온다.
+하지만, 이중 속성에 경우에는 앙상블이 로지스틱 회귀보다 정확도가 더 낮게 나오는것을 알수있었다.
 
 
+비지도 학습에서는 단일 속성의 경우, 정규화 하지 않은 데이터가 클러스터링이 제대로 되지 않아,
+Standard정규화, MinMax정규화하여 분석했고 MinMax정규화가 적합하다는 것을 알수있었다.
 
 
+이중 속성의 경우, 실루엣 스코어를 확인하여 7개의 컴포넌트로 진행하였고, 정규화에 영향을 미치지 않는다는것을 알수있었다.
+군집화(KMeans, 가우시안, DBSCAN)을 진행 했을 때, KMean와 가우시안은 standard정규화가 가장 잘 도출이 되었다.
+하지만, DBSCAN을 보시면 클러스터가 잘 도출되지 않는 모습을 볼 수 있다.
 
+그래서, 베이시안 가우시안과 라플라시안 스펙트럴로 추가 분석을 했다.
+베이시안 가우시안과 라플라시안 스펙트럴은 둘 다 적용 했을 때, 정규화를 진행하지 않는 데이터가 클러스터링 및 클러스터 확률이 잘 도출되었다.
+
+데이터의 형태의 따른 정규화와 모델 선택의 중요성을 알게 되었다.
 
 
 
