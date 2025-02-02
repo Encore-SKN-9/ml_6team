@@ -58,6 +58,10 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 
 ![output](https://github.com/user-attachments/assets/4433f7ed-b862-4b1e-8126-4a1cdc597bd1)
 
+![single_output](https://github.com/user-attachments/assets/13fb82d0-4516-4538-b69d-859e47cb6143)
+
+![double_output](https://github.com/user-attachments/assets/4b70d71e-e99a-4549-aa25-586f3bbd8aef)
+
 
 **- 이를 처리하기 위해, 새로운 컬럼 생성**
 ```
