@@ -170,11 +170,11 @@ recall = recall_score(y_test, y_pred_test)
 f1 = f1_score(y_test, y_pred_test)
 print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Score: {f1 * 100:.4f}")
 ```
-|앙상블 모델| Performance metrics |   Result  |
-|---|---------------------|-----------|
-|KNeighborsClassifier| 정확도 (Accuracy) | 96.80 % |
-|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
-|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
+|단일 속성|앙상블 모델| Performance metrics |   Result  |
+|---|---|---------------------|-----------|
+|---|KNeighborsClassifier| 정확도 (Accuracy) | 96.80 % |
+|---|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
+|---|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
 
 ![지도학습_단일 속성_앙상블 데이터](https://github.com/user-attachments/assets/10488d25-d9f6-453f-bb01-7e92438ff7a1)
 
@@ -196,11 +196,11 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 - 앙상블 모델 사용
 <결과 >
 
-|앙상블 모델| Performance metrics |   Result  |
-|---|---------------------|-----------|
-|KNeighborsClassifier| 정확도 (Accuracy) | 88.11 % |
-|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
-|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
+|이중 속성||앙상블 모델| Performance metrics |   Result  |
+|---|---|---------------------|-----------|
+|---|KNeighborsClassifier| 정확도 (Accuracy) | 88.11 % |
+|---|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
+|---|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
 
 ![지도학습_이중 속성_앙상블 데이터](https://github.com/user-attachments/assets/772b5e45-c166-48c7-9ff7-a158853fb1fe)
 
