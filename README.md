@@ -53,6 +53,7 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 
 ![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/6f25a917-c609-4c30-a3c2-92c2f653737d)
 
+![output](https://github.com/user-attachments/assets/723d42ae-fc24-45ed-97a3-a7492b7ebf80)
 
 ![output](https://github.com/user-attachments/assets/4433f7ed-b862-4b1e-8126-4a1cdc597bd1)
 
@@ -83,7 +84,6 @@ X = df_dropped_single.drop(columns=['name', 'type_only', 'total_points_bin', 'ma
 
 # 4. 라벨 
 y = df_dropped_single['label']
-  ![스크린샷 2025-01-31 182932](https://github.com/user-attachments/assets/ff4d0812-aed5-4c29-83c0-fc134592c520)
 ```
 ![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
 
