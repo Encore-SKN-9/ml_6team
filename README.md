@@ -37,7 +37,7 @@
 
                                                                                     * 출처: https://biz.heraldcorp.com/article/1233223
 
-## 3. EDA Processing
+## 3. EDA Pre-Processing
 1. 데이터 수집 및 선정
    https://www.kaggle.com/code/vinukranaweera/pokemon-type-classification
 2. 데이터 전처리
