@@ -71,6 +71,7 @@ df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped
 ## 4. 모델 훈련 및 평가
 # 지도학습
 
+**단일 속성 분석**
 1. 입력 데이터 및 라벨 데이터 설정
 ```
 # 1. 각 단일 속성별로 total 점수가 가장 높은 포켓몬 찾기
@@ -85,7 +86,6 @@ X = df_dropped_single.drop(columns=['name', 'type_only', 'total_points_bin', 'ma
 # 4. 라벨 
 y = df_dropped_single['label']
 ```
-![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
 
 2. 데이터 분할 및 정규화
 ```
@@ -129,14 +129,13 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 
 **시각화**
-
-
+![output](https://github.com/user-attachments/assets/ba9de347-7b99-4b24-b9f9-98710c8ddee4)
 
 ** 앙상블 모델 사용** 
 ```
 # 앙상블 모델 학습
 knn_clf = KNeighborsClassifier(n_neighbors=7)
-lr_clf = LogisticRegression(class_weight='balanced')
+lr_clf = LogisticRegression(')
 dt_clf = DecisionTreeClassifier()
 
 voting_clf = VotingClassifier(
@@ -169,12 +168,38 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 |앙상블 모델 결과| Performance metrics |   Result  | 로지스틱 회귀 모델 결과              | Performance metrics |   Result  |
 |---|---------------------|-----------|    -------                |---------------------|-----------|
-|---| 학습 점수 / 테스트 점수 | 89.41 % / 75.30 |   ---       | 정확도               | 93.92 % |
-|---| 정밀도 | 62.90 % |            ---                         | 정밀도 | 28.57 % |
-|---| 재현율 | 68.42 % |                   ---                  | 재현율 | 33.33 % |     
-|-----|F1 score | 65.55% |                  ---                   |F1 score | 30.77% |
+|---| 학습 점수 / 테스트 점수 | 96.80 % / 94.59 |   ---       | 정확도               | 93.92 % |
+|---| 정밀도 | 73.91 % |            ---                         | 정밀도 | 28.57 % |
+|---| 재현율 | 59.64 % |                   ---                  | 재현율 | 33.33 % |     
+|-----|F1 score | 66.01% |                  ---                   |F1 score | 30.77% |
+
+![output](https://github.com/user-attachments/assets/1d61e8dd-5f62-4ea5-ab92-618911a21585)
 
 
+**이중 속성 분석**
+
+<결과>
+
+| Performance metrics |   Result  |
+|---------------------|-----------|
+| 정확도               | 78.91 % |
+| 정밀도 | 73.91 % |
+| 재현율 | 59.64 % |
+|F1 score | 66.02% |
+
+![output](https://github.com/user-attachments/assets/a056ba03-813d-4913-a783-950abd1fc1ac)
+
+
+- 앙상블 모델 사용
+<결과 >
+|앙상블 모델 결과| Performance metrics |   Result  | 로지스틱 회귀 모델 결과              | Performance metrics |   Result  |
+|---|---------------------|-----------|    -------                |---------------------|-----------|
+|---| 학습 점수 / 테스트 점수 |88.11 % / 75.30% |   ---     | 정확도               | 78.91 % |
+|---| 정밀도 | 73.91 % |            ---                         | 정밀도 |  73.91 % |
+|---| 재현율 | 59.64 % |                   ---                  | 재현율 | 59.64 % |     
+|-----|F1 score | 66.01% |                  ---                   |F1 score |  66.02% |
+
+![output](https://github.com/user-attachments/assets/5520fb93-b7c3-4f3c-801a-0d44ffe62e4d)
 
 
 # 비지도 학습
