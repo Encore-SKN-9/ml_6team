@@ -180,12 +180,12 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 <결과>
 
-| Performance metrics |   Result  |
-|---------------------|-----------|
-| 정확도               | 78.91 % |
-| 정밀도 | 73.91 % |
-| 재현율 | 59.64 % |
-|F1 score | 66.02% |
+|이중속성| Performance metrics |   Result  |
+||---------------------|-----------|
+|| 정확도               | 78.91 % |
+|| 정밀도 | 73.91 % |
+|| 재현율 | 59.64 % |
+||F1 score | 66.02% |
 
 ![output](https://github.com/user-attachments/assets/a056ba03-813d-4913-a783-950abd1fc1ac)
 
