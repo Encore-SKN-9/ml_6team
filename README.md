@@ -210,7 +210,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 
 # 비지도 학습
-단일 속성
+**단일 속성**
 - DBSCAN
 ![DBSCAN](https://github.com/user-attachments/assets/601cde98-997e-480d-97e9-df8f318a79eb)
 
@@ -226,7 +226,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 - LabelEncoder
 ![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
 
-이중 속성
+**이중 속성**
 - 실루엣
 ![실루엣](https://github.com/user-attachments/assets/1e59684b-f29f-4ec1-bc71-c8f0a0270e4e)
 
@@ -267,7 +267,13 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ## 결론
 
 
-  
 
 
 
+
+
+
+
+
+
+![인삿말](https://github.com/user-attachments/assets/ead4cf7e-d501-4689-ba8a-887946552a9b)
