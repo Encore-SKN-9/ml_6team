@@ -49,8 +49,7 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 'weight_kg', 'abilities_number', 'ability_1', 'ability_2', 'ability_hidden', 'catch_rate', 'base_friendship',
 'base_experience', 'growth_rate', 'egg_type_number', 'egg_type_1', 'egg_type_2', 'percentage_male', 'egg_cycles'])
 ```
-2-2) 결측치 처리
-- typy_2 컬럼의 결측치 발견
+2-2) 결측치 처리: type_2 컬럼의 결측치 발견
 ![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/6f25a917-c609-4c30-a3c2-92c2f653737d)
 
 - 시각화
