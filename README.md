@@ -210,7 +210,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ## 단일 속성
 **- LabelEncoder**
 ![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
-(``` MINMAX정규화 ```)Standard정규화(            ) 기본 데이터
+(``` MINMAX정규화 ``)Standard정규화(            ) 기본 데이터
 
 **- KMeans**
 ![KMeans](https://github.com/user-attachments/assets/356ce4f1-8235-46bd-af23-f3bb33974595)
