@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d927ba16-2997-4855-a746-70b50bac9e7b)## SKN09-EDA-6Team
+## SKN09-EDA-6Team
 
 **SK Networks AI Camp 9기**
 
