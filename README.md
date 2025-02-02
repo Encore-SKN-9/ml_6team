@@ -48,9 +48,22 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 'weight_kg', 'abilities_number', 'ability_1', 'ability_2', 'ability_hidden', 'catch_rate', 'base_friendship',
 'base_experience', 'growth_rate', 'egg_type_number', 'egg_type_1', 'egg_type_2', 'percentage_male', 'egg_cycles'])
 ```
+2-2) 결측치 처리
+- typy_2 컬럼의 결측치 발견
+![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/820c0910-739b-4155-a527-de3b032cbc34)
+- 시각화
+![output](https://github.com/user-attachments/assets/4433f7ed-b862-4b1e-8126-4a1cdc597bd1)
 
-2-2) 속성별 캐릭터 수 확인
-  ![output](https://github.com/user-attachments/assets/e0eb5a7c-480c-40c7-afd6-58de11da90de)
+- 이를 처리하기 위해, 새로운 컬럼 생성 
+```
+df_dropped_single = df_dropped[df_dropped['type_2'] == 'None']
+df_dropped_double = df_dropped[df_dropped['type_2'] != 'None']
+```
+![스크린샷 2025-02-02 195229](https://github.com/user-attachments/assets/3033f9fa-052c-4f0a-9adc-cf2432e3adf7)
+
+
+
+
 
 
 3. 모델 훈련 및 평가 - 로지스틱 회귀 모델 사용
