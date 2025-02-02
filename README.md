@@ -36,7 +36,7 @@
 - 포켓몬 캐릭터의 전투에 대한 포켓몬GO 유저들의 전략 니즈 증가
   ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/d3f8418f-322a-41d7-afca-60a70f90f618)
 
-                                                                    * 출처: https://biz.heraldcorp.com/article/1233223
+                                                                           * 출처: https://biz.heraldcorp.com/article/1233223
 
 ## 3. EDA Pre-Processing
 1. 데이터 수집 및 선정
