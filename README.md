@@ -9,6 +9,7 @@
 ## 1. Introduction Team (팀 소개)
 
 ### 팀명: 오박사
+![6e8b3aa55a5fbaa1a210a8b92bd559e7](https://github.com/user-attachments/assets/05138345-ffdf-48fd-b5e2-eb8dfbeccf80)
 
 #### **팀원**
 
