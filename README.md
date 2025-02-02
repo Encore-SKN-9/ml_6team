@@ -33,7 +33,8 @@
   ![스크린샷 2025-01-31 125447](https://github.com/user-attachments/assets/1f17e76c-3888-41d0-9696-0a3f993606c3)
   
 - '포켓몬고' 공격력에 대한 사람들의 관심도 증가
-  ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/af2b6101-4f5d-4040-b6c6-07f8396189bf)
+  ![스크린샷 2025-01-31 140606](https://github.com/user-attachments/assets/d3f8418f-322a-41d7-afca-60a70f90f618)
+
                                                                                     * 출처: https://biz.heraldcorp.com/article/1233223
 
 ## 3. EDA Processing
