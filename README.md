@@ -70,47 +70,111 @@ df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped
 ## 4. 모델 훈련 및 평가
 # 지도학습
 
-- 입력 데이터 및 라벨 데이터 설정
+1. 입력 데이터 및 라벨 데이터 설정
+```
+# 1. 각 단일 속성별로 total 점수가 가장 높은 포켓몬 찾기
+df_dropped_single['max_total_per_single_type'] = df_dropped_single.groupby('type_only')['total_points'].transform('max')
+
+# 2. 라벨 생성: 단일 속성별로 가장 높은 total 값을 가진 포켓몬을 1, 나머지는 0
+df_dropped_single['label'] = (df_dropped_single['total_points'] == df_dropped_single['max_total_per_single_type']).astype(int)
+
+# 3. 모델 학습에 사용할 특성 (total_points, hp, attack, defense 사용)
+X = df_dropped_single.drop(columns=['name', 'type_only', 'total_points_bin', 'max_total_per_single_type', 'label'])
+
+# 4. 라벨 
+y = df_dropped_single['label']
   ![스크린샷 2025-01-31 182932](https://github.com/user-attachments/assets/ff4d0812-aed5-4c29-83c0-fc134592c520)
+```
+![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
 
- ![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
-- 데이터 분할 및 정규화
-![스크린샷 2025-01-31 182342](https://github.com/user-attachments/assets/0d480fad-bae7-418c-904f-5bd2b9abacc2)
+2. 데이터 분할 및 정규화
+```
+# 5. 데이터 분할 (훈련 데이터와 테스트 데이터로 나누기)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-- 모델 평가 및 정확도 측정
-  
-![스크린샷 2025-01-31 183134](https://github.com/user-attachments/assets/aee3a671-2568-40dc-87d4-54cf9398720e)
+# 7. 데이터 정규화 (스케일링)
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+```
 
+3. 모델 평가 및 정확도 측정
+```
+# 8. 로지스틱 회귀 모델 학습
+model = LogisticRegression()
+model.fit(X_train_scaled, y_train)
+
+# 9. 예측 및 평가
+y_pred = model.predict(X_test_scaled)
+
+# 10. 정확도 출력
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Accuracy: {accuracy * 100:.4f}%')
+```
+```
+# 그외 평가지수 출력
+precision = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Score: {f1 * 100:.4f}")
+```
 
 <결과>
-
-Accuracy: 92.04%
-
-정밀도: 25.0
-
-재현율: 63.64
-
-Predictions: [0 0 0 0 0 0 0 0 1 1]
-
-True Labels: [0 0 0 0 0 0 0 0 0 0]
+| Performance metrics |   Result  |
+|---------------------|-----------|
+| 정확도               | 93.92 % |
+| 정밀도 | 28.57 % |
+| 재현율 | 33.33 % |
+|F1 score | 30.77% |
 
 
-3-2) 시각화
-- 불균형 데이터 확인
-![실제 라벨보다 예측 라벨이 더 높게 나옴](https://github.com/user-attachments/assets/58d50e60-62a0-484b-bdf1-d3e04b890d05)
+**시각화**
 
 
-- 클래스 가중치 적용
-![가중치 줘서 예측 라벨 교정함](https://github.com/user-attac교
+
+** 앙상블 모델 사용** 
+```
+# 앙상블 모델 학습
+knn_clf = KNeighborsClassifier(n_neighbors=7)
+lr_clf = LogisticRegression(class_weight='balanced')
+dt_clf = DecisionTreeClassifier()
+
+voting_clf = VotingClassifier(
+    estimators=[
+        ('knn_clf', knn_clf),
+        ('lr_clf', lr_clf),
+        ('dt_clf', dt_clf)
+    ],
+    voting = 'hard'
+)
+
+voting_clf.fit(X_train_scaled, y_train)
+
+# 학습 점수
+y_pred_train = voting_clf.predict(X_train_scaled)
+acc_score_train = accuracy_score(y_train, y_pred_train)
+print(f'학습 점수: {acc_score_train:.4f}')
+
+# 평가 점수
+y_pred_test = voting_clf.predict(X_test_scaled)
+acc_score_test = accuracy_score(y_test, y_pred_test)
+print(f'테스트 평가 점수: {acc_score_test:.4f}')
+
+# 그외 평가지수 출력
+precision = precision_score(y_test, y_pred_test)
+recall = recall_score(y_test, y_pred_test)
+f1 = f1_score(y_test, y_pred_test)
+print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Score: {f1 * 100:.4f}")
+```
+
+| Performance metrics |   Result  |                    | Performance metrics |   Result  |
+|---------------------|-----------|                    |---------------------|-----------|
+| 학습 점수 / 테스트 점수 | 89.41 % / 75.30 |          | 정확도               | 93.92 % |
+| 정밀도 | 62.90 % |                                     | 정밀도 | 28.57 % |
+| 재현율 | 68.42 % |                                     | 재현율 | 33.33 % |     
+|F1 score | 65.55% |                                     |F1 score | 30.77% |
 
 
-3-3) 다른 분류 모델 앙상블로 비교
-![스크린샷 2025-01-31 192922](https://github.com/user-attachments/assets/8b7bd231-1c05-49e8-be76-3078d51e8fbc)
-
-    학습 점수: 0.9849521203830369
-    테스트 평가 점수: 0.9713375796178344
-
-![스크린샷 2025-01-31 192958](https://github.com/user-attachments/assets/d1dc48ab-1514-4db9-aab4-4a70be828990)
 
 
 # 비지도 학습
