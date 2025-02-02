@@ -60,9 +60,6 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 
 ![output](https://github.com/user-attachments/assets/4433f7ed-b862-4b1e-8126-4a1cdc597bd1)
 
-![single_output](https://github.com/user-attachments/assets/13fb82d0-4516-4538-b69d-859e47cb6143)
-
-![double_output](https://github.com/user-attachments/assets/4b70d71e-e99a-4549-aa25-586f3bbd8aef)
 
 
 **- 이를 처리하기 위해, 새로운 컬럼 생성**
@@ -74,6 +71,10 @@ df_dropped_single['type_only'] = df_dropped_single['type_1']
 df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped_double['type_2']))
 ```
 ![스크린샷 2025-02-02 195229](https://github.com/user-attachments/assets/3033f9fa-052c-4f0a-9adc-cf2432e3adf7)
+
+![single_output](https://github.com/user-attachments/assets/13fb82d0-4516-4538-b69d-859e47cb6143)
+
+![double_output](https://github.com/user-attachments/assets/4b70d71e-e99a-4549-aa25-586f3bbd8aef)
 
 <br>
 
