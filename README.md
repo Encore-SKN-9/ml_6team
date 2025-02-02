@@ -210,52 +210,53 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 
 # 비지도 학습
-**단일 속성**
-- DBSCAN
+##단일 속성
+**- DBSCAN**
 ![DBSCAN](https://github.com/user-attachments/assets/601cde98-997e-480d-97e9-df8f318a79eb)
+MINMAX정규화                    Standard정규화                    기본 데이터
 
-
-- KMeans
+**- KMeans**
 ![KMeans](https://github.com/user-attachments/assets/356ce4f1-8235-46bd-af23-f3bb33974595)
 
 
-- 가우시안
+**- 가우시안**
 ![가우시안](https://github.com/user-attachments/assets/89ac48f5-432d-40be-b213-fa643090776b)
 
 
-- LabelEncoder
+**- LabelEncoder**
 ![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
 
-**이중 속성**
-- 실루엣
+##이중 속성
+**- 실루엣**
+
 ![실루엣](https://github.com/user-attachments/assets/1e59684b-f29f-4ec1-bc71-c8f0a0270e4e)
 
 
-- KMeans 이중 특성 기준 데이터 클러스터 시각화
+**- KMeans 이중 특성 기준 데이터 클러스터 시각화**
 ![KMeans_이중 특성 기준 데이터 클러스터 시각화](https://github.com/user-attachments/assets/6f491011-4628-4813-b082-b5b9e07afa83)
 
 
-- KMeans 총 능력치 기준 데이터 클러스터 시각화
+**- KMeans 총 능력치 기준 데이터 클러스터 시각화**
 ![KMeans_총 능력치 기준 데이터 시각화](https://github.com/user-attachments/assets/d561c139-2b56-43b4-9ea1-9199172f06be)
 
 
-- 가우시안 혼합 클러스터 시각화
+**- 가우시안 혼합 클러스터 시각화**
 ![가우시안 혼합_클러스터 결과 시각화](https://github.com/user-attachments/assets/9392c970-1181-43df-8b4c-b86261647c4e)
 
 
-- 가우시안 혼합 총 능력치 클러스터 확률 시각화
+**- 가우시안 혼합 총 능력치 클러스터 확률 시각화**
 ![가우시안 혼합_포켓몬 총 능력치 클러스터 확률 시각화](https://github.com/user-attachments/assets/c6e8bd6f-c3f4-4496-b834-e46ce5f28b50)
 
 
-- 베이시안 가우시안 혼합 클러스터 시각화 
+**- 베이시안 가우시안 혼합 클러스터 시각화**
 ![베이시안 가우시안 혼합_클러스터 결과 시각화](https://github.com/user-attachments/assets/114f05f2-6389-4e6e-89df-a9147a22cf18)
 
 
-- 베이시안 가우시안 혼합 총 능력치 클러스터 확률 시각화
+**- 베이시안 가우시안 혼합 총 능력치 클러스터 확률 시각화**
 ![베이시안 가우시안 혼합_포켓몬 총 능력치 클러스터 확률 시각화](https://github.com/user-attachments/assets/c0bf2a13-eb92-4699-8779-592db8b40be9)
 
 
-- 라플라시안 스펙트럴 클러스터링 시각화
+**- 라플라시안 스펙트럴 클러스터링 시각화**
 ![라플라시안 스펙트럴 클러스터링_시각화](https://github.com/user-attachments/assets/08cc6a5b-2b71-4257-8f04-ca3cc92aabcc)
 
 
@@ -275,5 +276,5 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 
 
-
+## 이상으로 발표 마치겠습니다. 감사합니다!
 ![인삿말](https://github.com/user-attachments/assets/ead4cf7e-d501-4689-ba8a-887946552a9b)
