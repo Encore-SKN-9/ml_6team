@@ -210,10 +210,10 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 
 # 비지도 학습
-##단일 속성
+## 단일 속성
 **- DBSCAN**
 ![DBSCAN](https://github.com/user-attachments/assets/601cde98-997e-480d-97e9-df8f318a79eb)
-MINMAX정규화                    Standard정규화                    기본 데이터
+|MINMAX정규화|                     |Standard정규화|                    |기본 데이터|
 
 **- KMeans**
 ![KMeans](https://github.com/user-attachments/assets/356ce4f1-8235-46bd-af23-f3bb33974595)
@@ -226,7 +226,7 @@ MINMAX정규화                    Standard정규화                    기본 �
 **- LabelEncoder**
 ![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
 
-##이중 속성
+## 이중 속성
 **- 실루엣**
 
 ![실루엣](https://github.com/user-attachments/assets/1e59684b-f29f-4ec1-bc71-c8f0a0270e4e)
@@ -254,6 +254,11 @@ MINMAX정규화                    Standard정규화                    기본 �
 
 **- 베이시안 가우시안 혼합 총 능력치 클러스터 확률 시각화**
 ![베이시안 가우시안 혼합_포켓몬 총 능력치 클러스터 확률 시각화](https://github.com/user-attachments/assets/c0bf2a13-eb92-4699-8779-592db8b40be9)
+
+
+**- DBSCAN**
+
+![DBSCAN](https://github.com/user-attachments/assets/fa51b2f4-1b55-47d8-ae61-373e4b187dcd)
 
 
 **- 라플라시안 스펙트럴 클러스터링 시각화**
