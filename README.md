@@ -5,8 +5,6 @@
 **개발기간: 25.01.22 - 25.02.03**
 
 <br>
-<br>
-<br>
 
 ## 1. Introduction Team (팀 소개)
 
@@ -22,8 +20,6 @@
 | 이윤재     | [@dadambi116](https://github.com/dadambi116)
 | 조이현     | [@SIQRIT](https://github.com/SIQRIT)
 
-<br>
-<br>
 <br>
 
 ## 2. Introduction Project (프로젝트 개요)
@@ -42,8 +38,6 @@
 
                                                                            * 출처: https://biz.heraldcorp.com/article/1233223
 
-<br>
-<br>
 <br>
 
 ## 3. EDA Pre-Processing
@@ -81,8 +75,6 @@ df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped
 ```
 ![스크린샷 2025-02-02 195229](https://github.com/user-attachments/assets/3033f9fa-052c-4f0a-9adc-cf2432e3adf7)
 
-<br>
-<br>
 <br>
 
 ## 4. 모델 훈련 및 평가
@@ -194,6 +186,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 **앙상블 모델 - 단일 속성 시각화**
 ![지도학습_단일 속성_앙상블 데이터](https://github.com/user-attachments/assets/10488d25-d9f6-453f-bb01-7e92438ff7a1)
 
+<br>
 
 **이중 속성 분석**
 
@@ -224,8 +217,6 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ![지도학습_이중 속성_앙상블 데이터](https://github.com/user-attachments/assets/772b5e45-c166-48c7-9ff7-a158853fb1fe)
 
 <br>
-<br>
-<br>
 
 # 비지도 학습
 ## 단일 속성
@@ -245,8 +236,6 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ![DBSCAN](https://github.com/user-attachments/assets/601cde98-997e-480d-97e9-df8f318a79eb)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MinMax정규화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard정규화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기본 데이터
 
-<br>
-<br>
 <br>
 
 ## 이중 속성
