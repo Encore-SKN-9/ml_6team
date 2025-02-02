@@ -51,7 +51,8 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 ```
 2-2) 결측치 처리
 - typy_2 컬럼의 결측치 발견
-![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/820c0910-739b-4155-a527-de3b032cbc34)
+![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/6f25a917-c609-4c30-a3c2-92c2f653737d)
+
 - 시각화
 ![output](https://github.com/user-attachments/assets/4433f7ed-b862-4b1e-8126-4a1cdc597bd1)
 
