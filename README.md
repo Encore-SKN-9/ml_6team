@@ -50,6 +50,7 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 'base_experience', 'growth_rate', 'egg_type_number', 'egg_type_1', 'egg_type_2', 'percentage_male', 'egg_cycles'])
 ```
 2-2) 결측치 처리: type_2 컬럼의 결측치 발견
+
 ![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/6f25a917-c609-4c30-a3c2-92c2f653737d)
 
 - 시각화
@@ -71,7 +72,7 @@ df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped
 - 입력 데이터 및 라벨 데이터 설정
   ![스크린샷 2025-01-31 182932](https://github.com/user-attachments/assets/ff4d0812-aed5-4c29-83c0-fc134592c520)
 
-    ![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
+ ![스크린샷 2025-01-31 181803](https://github.com/user-attachments/assets/21616dbd-8fd3-4a38-919e-2592cc09aedb)
 - 데이터 분할 및 정규화
 ![스크린샷 2025-01-31 182342](https://github.com/user-attachments/assets/0d480fad-bae7-418c-904f-5bd2b9abacc2)
 
