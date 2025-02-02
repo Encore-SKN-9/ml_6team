@@ -1,4 +1,4 @@
-## SKN09-EDA-6Team
+![image](https://github.com/user-attachments/assets/d927ba16-2997-4855-a746-70b50bac9e7b)## SKN09-EDA-6Team
 
 **SK Networks AI Camp 9기**
 
@@ -198,9 +198,9 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 |이중 속성|앙상블 모델| Performance metrics |   Result  |
 |---|---|---------------------|-----------|
-|---|KNeighborsClassifier| 정확도 (Accuracy) | 88.11 % |
-|---|LogisticRegression| 정확도 (Accuracy) | 73.91 % |
-|---|DecisionTreeClassifier| 정확도 (Accuracy) | 59.64 % |
+|---|KNeighborsClassifier| 정확도 (Accuracy) | 71.69 % |
+|---|LogisticRegression| 정확도 (Accuracy) | 78.92 % |
+|---|DecisionTreeClassifier| 정확도 (Accuracy) | 71.69 % |
 
 ![지도학습_이중 속성_앙상블 데이터](https://github.com/user-attachments/assets/772b5e45-c166-48c7-9ff7-a158853fb1fe)
 
@@ -210,7 +210,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 ## 단일 속성
 **- LabelEncoder**
 ![LabelEncoder](https://github.com/user-attachments/assets/ae471b52-0fc1-4ba0-abd3-340a62a92d2a)
-|MINMAX정규화|                     |Standard정규화|                    |기본 데이터|
+|MINMAX정규화|&nbsp;|Standard정규화|&nbsp;|기본 데이터|
 
 **- KMeans**
 ![KMeans](https://github.com/user-attachments/assets/356ce4f1-8235-46bd-af23-f3bb33974595)
@@ -263,11 +263,8 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 **- 라플라시안 스펙트럴 클러스터링 시각화**
 ![라플라시안 스펙트럴 클러스터링_시각화](https://github.com/user-attachments/assets/08cc6a5b-2b71-4257-8f04-ca3cc92aabcc)
 
-
-
-
-
-
+<br>
+<br>
 
 ## 결론
 - 지도학습에서는 단일 속성의 경우, 로지스틱 회귀보다 앙상블이 정확도가 더 좋게 나온다.
@@ -286,9 +283,11 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 
 - 데이터의 형태의 따른 정규화와 모델 선택의 중요성을 알게 되었다.
 
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## 이상으로 발표 마치겠습니다. 감사합니다!
 ![인삿말](https://github.com/user-attachments/assets/ead4cf7e-d501-4689-ba8a-887946552a9b)
