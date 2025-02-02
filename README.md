@@ -53,10 +53,11 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 
 ![스크린샷 2025-02-02 194310](https://github.com/user-attachments/assets/6f25a917-c609-4c30-a3c2-92c2f653737d)
 
-- 시각화
+
 ![output](https://github.com/user-attachments/assets/4433f7ed-b862-4b1e-8126-4a1cdc597bd1)
 
-- 이를 처리하기 위해, 새로운 컬럼 생성 
+
+**- 이를 처리하기 위해, 새로운 컬럼 생성**
 ```
 # type_only 컬럼 생성
 df_dropped_single['type_only'] = df_dropped_single['type_1']
