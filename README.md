@@ -57,8 +57,11 @@ df_dropped = df.drop(columns=['Unnamed: 0', 'german_name', 'japanese_name', 'gen
 
 - 이를 처리하기 위해, 새로운 컬럼 생성 
 ```
-df_dropped_single = df_dropped[df_dropped['type_2'] == 'None']
-df_dropped_double = df_dropped[df_dropped['type_2'] != 'None']
+# type_only 컬럼 생성
+df_dropped_single['type_only'] = df_dropped_single['type_1']
+
+# type_mix 컬럼 생성
+df_dropped_double['type_mix'] = list(zip(df_dropped_double['type_1'], df_dropped_double['type_2']))
 ```
 ![스크린샷 2025-02-02 195229](https://github.com/user-attachments/assets/3033f9fa-052c-4f0a-9adc-cf2432e3adf7)
 
