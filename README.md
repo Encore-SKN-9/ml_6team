@@ -92,7 +92,7 @@ y = df_dropped_single['label']
 # 5. 데이터 분할 (훈련 데이터와 테스트 데이터로 나누기)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-# 7. 데이터 정규화 (스케일링)
+# 6. 데이터 정규화 (스케일링)
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
@@ -100,19 +100,19 @@ X_test_scaled = scaler.transform(X_test)
 
 3. 모델 평가 및 정확도 측정
 ```
-# 8. 로지스틱 회귀 모델 학습
+# 7. 로지스틱 회귀 모델 학습
 model = LogisticRegression()
 model.fit(X_train_scaled, y_train)
 
-# 9. 예측 및 평가
+# 8. 예측 및 평가
 y_pred = model.predict(X_test_scaled)
 
-# 10. 정확도 출력
+# 9. 정확도 출력
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy * 100:.4f}%')
 ```
 ```
-# 그외 평가지수 출력
+# 10. 그외 평가지수 출력
 precision = precision_score(y_test, y_pred)
 recall = recall_score(y_test, y_pred)
 f1 = f1_score(y_test, y_pred)
