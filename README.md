@@ -181,11 +181,9 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 |단일 속성|앙상블 모델| Performance metrics |   Result  |---|LogisticRegression| Performance metrics |   Result  |
 |---|---|---------------------|-----------|---|---|---------------------|-----------|
 |---|---| 정확도 (Accuracy) |  93.92 % |---|-----------| 정확도(Accuracy) |  93.92 % |
-|---|---| 정밀도 (Precision) | 73.91% |---|-----------| 정밀도 (Precision) | 28.57 % |
+|---|---| 정밀도 (Precision) | 65.38% |---|-----------| 정밀도 (Precision) | 28.57 % |
 |---|---| 재현율 (Recall) | 59.65 % |---|-----------| 재현율 (Recall) | 33.33 % |
-|---|---| F1 Score Rate | 66.02 % |---|-----------| F1 Score Rate | 30.77% |
-|---|학습율| 정확도 (Accuracy) | 96.80 % |---|-----------| 
-|---|테스트 평가율| 정확도 (Accuracy) | 94.59 % |---|-----------|
+|---|---| F1 Score Rate | 62.38 % |---|-----------| F1 Score Rate | 30.77% |
 
 
 |단일 속성|앙상블 모델| Performance metrics |   Result  |
@@ -210,7 +208,7 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 |---|---------------------|-----------|
 |---| 정확도 (Accuracy)              | 78.91 % |
 |---| 정밀도 (Precision)| 73.91 % | --- |
-|---| 재현율 (Recall)| 59.64 % 
+|---| 재현율 (Recall)| 59.64 % |
 |---| F1 Score Rate | 66.02% |
 
 **로지스틱 회귀 모델 - 이중 속성 시각화**
@@ -220,6 +218,13 @@ print(f"정밀도: {precision * 100:.4f}, 재현율: {recall * 100:.4f}, F1 Scor
 - 앙상블 모델 사용
 
 <결과>
+|이중 속성|앙상블 모델| Performance metrics |   Result  |---|LogisticRegression| Performance metrics |   Result  |
+|---|---|---------------------|-----------|---|---|---------------------|-----------|
+|---|---| 정확도 (Accuracy) |  93.92 % |---|-----------| 정확도 (Accuracy)         | 78.91 % |
+|---|---| 정밀도 (Precision) | 61.40% |---|-----------| 정밀도 (Precision)| 73.91 % | --- |
+|---|---| 재현율 (Recall) | 59.65 % |---|-----------| 재현율 (Recall)| 59.64 % |
+|---|---| F1 Score Rate | 63.64 % |---|-----------| F1 Score Rate | 66.02% |
+
 |이중 속성|앙상블 모델| Performance metrics |   Result  |
 |---|---|---------------------|-----------|
 |---|KNeighborsClassifier| 정확도 (Accuracy) | 71.69 % |
