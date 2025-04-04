@@ -1,4 +1,4 @@
-## SKN09-EDA-6Team
+## SKN09-ML-6Team
 
 **SK Networks AI Camp 9기**
 
